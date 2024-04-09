@@ -40,6 +40,10 @@ body{
 
 /* ///////// HEADER //////// */
 
+.header{
+    margin-bottom: 90px;
+}
+
 .header__inner{
     display: flex;
     justify-content: space-between;
@@ -67,4 +71,84 @@ body{
 .user-nav{
     display: flex;
     gap: 0 20px;
+}
+
+/* ///////// TOP //////// */
+
+.top{
+    margin-bottom: 150px;
+}
+
+.top-slider__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 700px;
+}
+
+.top-slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.top-slider__content{
+    flex-basis: 183px;
+    margin-top: -140px;
+}
+
+.top-slider__title{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 1.3;
+    margin-bottom: 56px;
+}
+
+.top-slider__subtitle{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.top-slider__text{
+    margin-bottom: 20px;
+}
+
+.top-slider__btn{
+     color: #7449BB;
+     text-transform: uppercase;
+     font-weight: 700;
+     padding: 21px 55px;
+     border: 1px solid #7449BB;
+     display: inline-block;
+     margin-left: auto;
+     transition: all .3s ease;
+}
+
+.top-slider__btn:hover{
+    color: #fff;
+    background-color: #7449BB;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: none;
+}
+
+.container-arrow{
+    position: relative;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.top .swiper{
+    padding-bottom: 50px;
+}
+
+.swiper-button-next{
+    left: 76px;
+    right: auto;
 }

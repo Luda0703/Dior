@@ -14,7 +14,7 @@ const swiperTop = new Swiper('.top__swiper', {
   });
 
   const swiperAbout = new Swiper(".about__slider", {
-    slidesPerView: 3.3,
+    slidesPerView: 4,
     spaceBetween: 20,
     freeMode: true,
 
@@ -22,4 +22,10 @@ const swiperTop = new Swiper('.top__swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+  })
+
+   document.querySelectorAll('.accardeon__triger').forEach((item) => {
+    item.addEventListener('click', () => {
+      item.parentNode.classList.toggle('accardeon__item--active')
+    })
   })

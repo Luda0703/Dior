@@ -6,17 +6,27 @@ const swiperTop = new Swiper('.top__swiper', {
       prevEl: '.swiper-button-prev',
     },
 
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    //   },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 
   });
 
   const swiperAbout = new Swiper(".about__slider", {
     slidesPerView: 4,
-    spaceBetween: 20,
     freeMode: true,
+
+    breakpoints: {
+        520: {
+          spaceBetween: 10,
+        },
+
+      },
 
     navigation: {
         nextEl: '.swiper-button-next',
